@@ -7,12 +7,29 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
-# View for rendering the login page
 def user_login(request):
+    """
+    Render the login page.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: Rendered login page.
+    """
     return render(request, 'authentication/login.html')
 
-# View for authenticating a user
 def authenticate_user(request):
+    """
+    Authenticate a user based on the provided credentials.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponseRedirect: Redirects to the login page upon successful authentication,
+                             otherwise redirects back to the login page.
+    """
     if request.method == 'POST':
         username = request.POST.get('username') 
         password = request.POST.get('password')
@@ -23,16 +40,32 @@ def authenticate_user(request):
             return HttpResponseRedirect(reverse('user_auth:login'))
         else:
             return redirect('user_auth:login')
-            
-# View for displaying user information    
+
 def show_user(request):
+    """
+    Display user information.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: Rendered user information page.
+    """
     return render(request, 'authentication/user.html', {
         "username": request.user.username,
         "password": request.user.password 
     })
 
-# View for user registration
 def register(request):
+    """
+    Handle user registration.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: Rendered registration page or redirects to the login page upon successful registration.
+    """
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
