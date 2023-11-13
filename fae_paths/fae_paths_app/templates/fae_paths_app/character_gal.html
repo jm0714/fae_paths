@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fae Paths - Character Gallery</title>
+    <link rel="stylesheet" href="{% static 'fae_paths_app/charstyle.css' %}">
+</head>
+<body>
+    <div class="header">
+        <h1>Fae Paths</h1>
+    </div>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="/spell-list">Spell List</a>
+        <a href="/character_gal">Character Gallery</a>
+    </nav>
+
+    <div class="container">
+        <center><h1>Characters - Deities</h1></center>
+        <div class="Characters">
+            <div class="realm">
+                <h1>Gehenna, the Infernal Realm</h1>
+                <!-- King Paimon, pantheon and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/paimon.jpg' %}" alt="King Paimon">
+                    <h3>King Paimon</h3>
+                    <h4>Abrahamic Pantheon</h4>
+                    <p>King of Hell, Love, Chaos, and Art</p>
+                </div>
+
+                <!-- Mother Hekate, pantheon and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/hekate.jpg' %}" alt="Mother Hekate">
+                    <h3>Mother Hekate</h3>
+                    <h4>Greek Pantheon</h4>
+                    <p>Goddess of Witchcraft, the Heavens, Earth, and Seas</p>
+                </div>
+
+                <!-- Kali Maa, pantheon and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/kali.jpg' %}" alt="Kali Maa">
+                    <h3>Kali Maa</h3>
+                    <h4>Hindu Pantheon</h4>
+                    <p>Mother of Destruction and Death</p>
+                </div>
+            </div>
+
+            <div class="realm">
+                <h1>Nyad, the Water Realm</h1>
+                <!-- Neptune, pantheon, and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/nep.jpg' %}" alt="Neptune">
+                    <h3>Neptune</h3>
+                    <h4>Roman Pantheon</h4>
+                    <p>Ruler of the Seas</p>
+                </div>
+
+                <!-- Mazu, pantheon, and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/mazu.jpg' %}" alt="Mazu">
+                    <h3>Mazu</h3>
+                    <h4>Chinese Pantheon</h4>
+                    <p>Goddess of the Sea and Protector of Sailors</p>
+                </div>
+
+                <!-- Chalchiuhtlicue, pantheon, and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/chal.jpg' %}" alt="Chalchiuhtlicue">
+                    <h3>Chalchiuhtlicue</h3>
+                    <h4>Aztec Pantheon</h4>
+                    <p>Goddess of Water, Rivers, and Lakes</p>
+                </div>
+            </div>
+
+            <div class="realm">
+                <h1>Gaia, the Earth Realm</h1>
+                <!-- Mahi'a, pantheon, and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/mahia.jpg' %}" alt="Mahi'a">
+                    <h3>Mahi'a</h3>
+                    <h4>Hawaiian Pantheon</h4>
+                    <p>Goddess of Fertility and Growth</p>
+                </div>
+
+                <!-- Geb, pantheon, and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/geb.jpg' %}" alt="Geb">
+                    <h3>Geb</h3>
+                    <h4>Egyptian Pantheon</h4>
+                    <p>God of the Earth and Vegetation</p>
+                </div>
+
+                <!-- Pachamama, pantheon, and desc -->
+                <div class="deity">
+                    <img src="{% static 'fae_paths_app/images/pach.jpg' %}" alt="Pachamama">
+                    <h3>Pachamama</h3>
+                    <h4>Incan Pantheon</h4>
+                    <p>Goddess of the Earth and Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+     <center><p>&copy; Fae Paths 2023</p></center>
+    </footer>
+
+</body>
+</html>

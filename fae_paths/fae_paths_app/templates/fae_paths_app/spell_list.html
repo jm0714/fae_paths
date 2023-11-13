@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fae Paths - Spell List</title>
+    <link rel="stylesheet" href="{% static 'fae_paths_app/spellstyle.css' %}">
+</head>
+<body>
+    <div class="header">
+        <h1>Fae Paths</h1>
+    </div>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="/spell-list">Spell List</a>
+        <a href="/character_gal">Character Gallery</a>
+    </nav>
+
+    <div class="container">
+        <center><h2>Spells</h2></center>
+        <div class="spell-section">
+            <!-- Spell 1 -->
+            <div class="spell">
+                <img src="{% static 'fae_paths_app/images/protect.png' %}" alt="Protection Spell">
+                <h3>Protection Spell</h3>
+                <p>Grants player invincibility from baneful attacks for 15 seconds</p>
+            </div>
+
+            <!-- Spell 2 -->
+            <div class="spell">
+                <img src="{% static 'fae_paths_app/images/luck.png' %}" alt="Luck Spell">
+                <h3>Luck Spell</h3>
+                <p>Grants player ability to skip 4 puzzles</p>
+            </div>
+
+            <!-- Spell 3 -->
+            <div class="spell">
+                <img src="{% static 'fae_paths_app/images/banish.png' %}" alt="Banishing Spell">
+                <h3>Banishing Spell</h3>
+                <p>When player visits the realm of infernals, firewalkers cannot touch them</p>
+            </div>
+
+            <!-- Spell 4 -->
+            <div class="spell">
+                <img src="{% static 'fae_paths_app/images/manip.png' %}" alt="Manipulation Spell">
+                <h3>Manipulation Spell</h3>
+                <p>Player is more charismatic or convincing</p>
+            </div>
+
+            <!-- Spell 5 -->
+            <div class="spell">
+                <img src="{% static 'fae_paths_app/images/invoke.png' %}" alt="Invocation Spell">
+                <h3>Invocation Spell</h3>
+                <p>Grants player the ability to call upon legion of spirits to fight with them, spirits abilities depend on the deity the player has built standing with</p>
+            </div>
+
+            <!-- Spell 6 -->
+            <div class="spell">
+                <img src="{% static 'fae_paths_app/images/oriah.png' %}" alt="Curse of Oriah">
+                <h3>The curse of Oriah</h3>
+                <p>Players drain enemies of all life force which activates rage and buffs for 10 seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <center><p>&copy; Fae Paths 2023</p></center>
+    </footer>
+
+</body>
+</html>

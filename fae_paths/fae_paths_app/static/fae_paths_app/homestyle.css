@@ -1,0 +1,48 @@
+
+/* Background color for the entire page */
+body {
+    background-color: #b19cd9; /* Pastel purple background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the header and navigation */
+.header {
+    background-color: #663399; /* Dark purple header background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #663399; /* Dark purple navigation background color */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+/* Styles for the content container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Additional styles for headings and text */
+h2 {
+    color: #0b060f; /* Dark purple for headings */
+}
+
+p {
+    color: #1a1919; /* Dark gray for regular text */
+}
+
+b {
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+body {
+    background-color: #b19cd9; /* Pastel purple background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #663399; /* Dark purple header background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #663399; /* Dark purple navigation background color */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+/* Styles for the character gallery */
+.Characters {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Add spacing between deities */
+}
+
+.realm {
+    grid-column: span 3; /* Make realm names span all 3 columns */
+    text-align: center;
+    background-color: #fff; /* White background for realms */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for realms */
+    margin-bottom: 20px; /* Space between realms and deities */
+}
+
+.deity {
+    background-color: #fff; /* White background for each deity */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for each deity */
+    margin-bottom: 20px; /* Space between deities */
+}
+
+.deity img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    margin-bottom: 10px; /* Add some space below the image */
+}
+
+/* Additional styles for headings and text */
+h3 {
+    color: #663399; /* Dark purple for headings */
+}
+
+h4 {
+    color: #333; /* Dark gray for subheadings */
+}
+
+p {
+    color: #333; /* Dark gray for regular text */
+}
